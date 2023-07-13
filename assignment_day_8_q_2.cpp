@@ -1,11 +1,16 @@
 #include<iostream>
 #include<string>
 using namespace std;
-int main()
+class Test
 {
+    public:
+    Test ()
+    {
+
+    cout<<"Enter a sentence :";
     string str;
     getline(cin,str);
-    int space,vowel,cons,digit;
+    int space=0,vowel=0,cons=0,digit=0;
     for (int i = 0; i < str.length(); i++)
     {//list attendence dict menu
         if (str[i]=='U'||str[i]=='O'||str[i]=='I'||str[i]=='E'||str[i]=='A'||str[i]=='u'||str[i]=='o'||str[i]=='i'||str[i]=='e'||str[i]=='a')
@@ -22,8 +27,13 @@ int main()
         }
         else{cons++;}
     }
-        
-    
-    
-    
+    cout<<"Vowerls : "<<vowel<<endl;    
+    cout<<"Consonants : "<<cons<<endl;
+    cout<<"Digits : "<<digit<<endl;
+    cout<<"Space : "<<space<<endl;
+    }
+}heloo;
+int main()
+{
+    return 0;
 }
